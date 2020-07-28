@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-blogmail",
   "description": "A component for integrating blogmail newsletters into Gatsby.",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "repository": "https://github.com/blogmail/gatsby-plugin-blogmail",
   "homepage": "https://github.com/blogmail/gatsby-plugin-blogmail",
   "bugs": {
