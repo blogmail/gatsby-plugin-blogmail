@@ -50,8 +50,58 @@ const PostTemplate = () => {
   return (
     <>
       <h1>{post.title}</h1>
-      /* Post Contents */
-      <Blogmail config={blogmailConfig} />
+      /* Post Contents here */
+      <div
+        style={{
+          padding: `0.5rem`,
+          borderWidth: `1px`,
+          borderRadius: `0.25rem`,
+          borderColor: `#cbd5e0`,
+          borderStyle: `solid`,
+          marginBottom: `1rem`,
+        }}
+      >
+        <Blogmail
+          subscribedText="You're subscribed! 🎉"
+          styles={{
+            form: {
+              marginBottom: `0px`,
+            },
+            formDiv: {
+              display: `flex`,
+              flexWrap: `wrap`,
+            },
+            label: {
+              width: `100%`,
+              padding: `0.5rem`,
+            },
+            subscribedDiv: {
+              width: `100%`,
+              padding: `0.5rem`,
+            },
+            textInput: {
+              padding: `0.5rem`,
+              flexGrow: 1,
+              margin: `0.25rem`,
+              borderRadius: `0.25rem`,
+              borderColor: `#a0aec0`,
+              borderStyle: `solid`,
+            },
+            submitInput: {
+              padding: `0.5rem`,
+              margin: `0.25rem`,
+              borderRadius: `0.25rem`,
+              borderColor: `#a0aec0`,
+              borderStyle: `solid`,
+            },
+            bottomDiv: {
+              color: `#718096`,
+              padding: `0.5rem`,
+              fontSize: `0.8rem`,
+            },
+          }}
+        />
+      </div>
     </>
   )
 }
