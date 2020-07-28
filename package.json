@@ -1,0 +1,71 @@
+{
+  "name": "gatsby-plugin-blogmail",
+  "description": "A component for integrating blogmail newsletters into Gatsby.",
+  "version": "1.0.6",
+  "repository": "https://github.com/blogmail/gatsby-plugin-blogmail",
+  "homepage": "https://github.com/blogmail/gatsby-plugin-blogmail",
+  "bugs": {
+    "url": "https://github.com/blogmail/gatsby-plugin-blogmail/issues"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsbyjs",
+    "plugin",
+    "blogmail",
+    "newsletter"
+  ],
+  "author": "Brenden Matthews <brenden@brndn.io>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-macros": "^2.8.0",
+    "babel-preset-gatsby-package": "^0.5.2",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "rollup": "^2.23.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.3"
+  },
+  "dependencies": {
+    "@blogmail/react": "^1.0.6"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix",
+    "*.{json,md}": "prettier --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
